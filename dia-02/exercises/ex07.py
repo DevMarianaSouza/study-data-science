@@ -13,3 +13,16 @@ else:
 
 # Altere o programa anterior para considerar a quantidade de água
 
+escolha = input("Você gostaria de uma garrafa de água mineral ou com gás? (mineral/gás): ")
+
+quantidade = int(input("Quantas águas você deseja? "))
+
+if escolha == "mineral":
+    total = 1.5 * quantidade
+    
+elif escolha == "gás":
+    total = 2.5 * quantidade
+else:
+    print("Faça uma esclha válida!") 
+
+print("Você me deve R$", total)
